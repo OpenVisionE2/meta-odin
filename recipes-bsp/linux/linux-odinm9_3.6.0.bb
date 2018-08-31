@@ -5,6 +5,8 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit kernel machine_kernel_pr
 
+COMPATIBLE_MACHINE = "maram9"
+
 KERNEL_RELEASE = "3.6.0"
 
 SRC_URI[md5sum] = "fad4c270fe68fcc8d15258c868bc2733"
