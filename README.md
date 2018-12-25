@@ -1,2 +1,2 @@
 # meta-odin
-Odin BSP layer for PLi's OE
+Odin BSP layer for Open Vision
