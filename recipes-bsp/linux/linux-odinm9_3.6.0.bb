@@ -5,7 +5,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit kernel machine_kernel_pr
 
-COMPATIBLE_MACHINE = "maram9"
+COMPATIBLE_MACHINE = "^(maram9)$"
 
 KERNEL_RELEASE = "3.6.0"
 

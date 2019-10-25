@@ -5,7 +5,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit kernel machine_kernel_pr
 
-COMPATIBLE_MACHINE = "starsatlx|geniuse3hd|genius|galaxym6|evo|classm|axodinc|axodin"
+COMPATIBLE_MACHINE = "^(starsatlx|geniuse3hd|genius|galaxym6|evo|classm|axodinc|axodin)$"
 
 SRC_URI[md5sum] = "76b7b50307cddf1b30ba63c16af95e52"
 SRC_URI[sha256sum] = "35ec09f2c959c891fd8916430043be11a46493844708225f64680b9d25d7411b"
