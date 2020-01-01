@@ -3,6 +3,8 @@ include conf/machine/include/build-extras.inc
 
 BOX_BRAND = "odin"
 
+PREFERRED_PROVIDER_virtual/kernel = "linux-odin"
+
 KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
 

@@ -5,12 +5,10 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit kernel machine_kernel_pr
 
-COMPATIBLE_MACHINE = "^(maram9)$"
+COMPATIBLE_MACHINE = "^(geniuse3hd|evoe3hd|axase3c|axase3|starsatlx|geniuse3hd|genius|galaxym6|evo|classm|axodinc|axodin)$"
 
-KERNEL_RELEASE = "3.6.0"
-
-SRC_URI[md5sum] = "fad4c270fe68fcc8d15258c868bc2733"
-SRC_URI[sha256sum] = "df8c6071cbdd6a709aebb8a272dca60791edb379103597670609ef90e148d8bb"
+SRC_URI[md5sum] = "76b7b50307cddf1b30ba63c16af95e52"
+SRC_URI[sha256sum] = "35ec09f2c959c891fd8916430043be11a46493844708225f64680b9d25d7411b"
 
 LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
@@ -22,37 +20,15 @@ PKG_kernel-image = "kernel-image"
 RPROVIDES_kernel-base = "kernel-${KERNEL_VERSION}"
 RPROVIDES_kernel-image = "kernel-image-${KERNEL_VERSION}"
 
-SRC_URI += "http://source.mynonpublic.com/download/linux-${PV}.tar.gz \
+SRC_URI += "http://source.mynonpublic.com/download/odin-linux-${PV}.tar.xz \
 	file://defconfig \
-	file://0001-Revert-MIPS-mm-Add-compound-tail-page-_mapcount-when.patch \
-	file://0001-Revert-MIPS-Add-fast-get_user_pages.patch \
-	file://add-dmx-source-timecode.patch \
-	file://af9015-output-full-range-SNR.patch \
-	file://af9033-output-full-range-SNR.patch \
-	file://as102-adjust-signal-strength-report.patch \
-	file://as102-scale-MER-to-full-range.patch \
-	file://cinergy_s2_usb_r2.patch \
-	file://cxd2820r-output-full-range-SNR.patch \
-	file://dvb-usb-a867.patch \
-	file://dvb-usb-dib0700-disable-sleep.patch \
-	file://dvb-usb-rtl2832.patch \
-	file://dvb_usb_disable_rc_polling.patch \
-	file://em28xx_add_terratec_h5_rev3.patch \
-	file://fix-proc-cputype.patch \
-	file://fixme-hardfloat.patch \
-	file://iosched-slice_idle-1.patch \
-	file://it913x-switch-off-PID-filter-by-default.patch \
-	file://tda18271-advertise-supported-delsys.patch \
-	file://fix-dvb-siano-sms-order.patch \
-	file://board.patch \
-	file://mxl5007t-add-no_probe-and-no_reset-parameters.patch \
-	file://nfs-max-rwsize-8k.patch \
-	file://rtl8712-fix-warnings.patch \
-	file://rtl8187se-fix-warnings.patch \
-	file://kernel-add-support-for-gcc6.patch \
-	file://dvb_frontend-Multistream-support-3.6.patch \
-	file://timeconst_perl5.patch \
-	file://genksyms_fix_typeof_handling.patch \
+	file://0001-Support-TBS-USB-drivers.patch \
+	file://0001-STV-Add-PLS-support.patch \
+	file://0001-STV-Add-SNR-Signal-report-parameters.patch \
+	file://0001-stv090x-optimized-TS-sync-control.patch \
+	file://blindscan2.patch \
+	file://0002-makefile-disable-warnings.patch \
+	file://0003-cp1emu-do-not-use-bools-for-arithmetic.patch \
 	"
 
 S = "${WORKDIR}/linux-${PV}"
