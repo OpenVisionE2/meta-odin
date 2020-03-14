@@ -25,8 +25,6 @@ DVBMEDIASINK_CONFIG = "--with-wma --with-wmv --with-pcm --with-dtsdownmix"
 TARGET_ARCH = "mipsel"
 DEFAULTTUNE = "mips32el"
 
-PREFERRED_VERSION_nfs-utils ?= "1.2.8"
-
 KERNEL_IMAGETYPE = "vmlinux"
 KERNEL_OUTPUT = "${KERNEL_IMAGETYPE}"
 KERNEL_CONSOLE = "ttyS0,115200n8"
