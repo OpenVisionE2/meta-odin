@@ -22,7 +22,7 @@ RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image-${KERNEL_
 
 SRC_URI += "http://source.mynonpublic.com/download/odin-linux-${PV}.tar.xz \
 	file://defconfig \
-	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc9.patch \
+	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
 	file://0001-Support-TBS-USB-drivers.patch \
 	file://0001-STV-Add-PLS-support.patch \
 	file://0001-STV-Add-SNR-Signal-report-parameters.patch \
