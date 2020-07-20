@@ -1,6 +1,4 @@
-#
-# This is config file for Axas E3HD-C
-#
+require conf/machine/include/odin-oem.inc
 
 MTD_KERNEL = "mtd1"
 MTD_ROOTFS = "mtd2"
@@ -14,10 +12,8 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 PREFERRED_PROVIDER_virtual/blindscan-dvbc = "odin-blindscan-utils-e3hd"
 PREFERRED_PROVIDER_virtual/blindscan-dvbs = "odin-blindscan-utils-e3hd"
 
-require conf/machine/include/odin-oem.inc
-
 SOC_FAMILY = "bcm7358"
 
 PREFERRED_VERSION_linux-odin = "3.18.24"
 
-MACHINE_FEATURES += "videoenhancement blindscan-tbs dvb-c dvbc-only"
+MACHINE_FEATURES += "videoenhancement blindscan-tbs dvb-c RCA"

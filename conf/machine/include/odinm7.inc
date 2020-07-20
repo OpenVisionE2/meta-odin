@@ -1,11 +1,9 @@
-#
-# This is config file for T-rex GalaxyM6
-#
+require conf/machine/include/odin-oem.inc
+
+IMAGEDIR = "en2"
 
 MTD_KERNEL = "mtd3"
 MTD_ROOTFS = "mtd4"
-
-IMAGEDIR = "en2"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     odin-dvb-modules-odinm7 \
@@ -20,4 +18,4 @@ SOC_FAMILY = "bcm7358"
 
 PREFERRED_VERSION_linux-odin = "3.18.24"
 
-MACHINE_FEATURES += "videoenhancement blindscan-tbs 7segment textlcd"
+MACHINE_FEATURES += "videoenhancement blindscan-tbs 7segment textlcd dvb-c SCART RCA"
