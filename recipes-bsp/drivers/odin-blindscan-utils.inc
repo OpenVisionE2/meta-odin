@@ -2,7 +2,7 @@ SUMMARY = "Utils for DVB-S blindscan"
 SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "CLOSED"
-PACKAGE_ARCH = "${MACHINE_ARCH}"
+
 require conf/license/license-close.inc
 
 PROVIDES += "virtual/blindscan-dvbc virtual/blindscan-dvbs"
