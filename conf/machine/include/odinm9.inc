@@ -16,4 +16,4 @@ SOC_FAMILY = "bcm7413"
 
 PREFERRED_VERSION_linux-odin = "3.6.0"
 
-MACHINE_FEATURES += "ci fanctrl textlcd RCA SCART YUV"
+MACHINE_FEATURES += "ci fanctrl textlcd RCA SCART YUV vfdsymbol"
