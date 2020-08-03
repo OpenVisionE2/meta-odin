@@ -214,7 +214,7 @@ CONFIG_FRONTSWAP=y
 # CONFIG_ZSWAP is not set
 # CONFIG_ZPOOL is not set
 # CONFIG_ZBUD is not set
-# CONFIG_ZSMALLOC is not set
+CONFIG_ZSMALLOC=m
 # CONFIG_HZ_48 is not set
 # CONFIG_HZ_100 is not set
 # CONFIG_HZ_128 is not set
