@@ -1,4 +1,3 @@
-KV = "3.18.24"
 SRCDATE = "20151211"
 
 require odin-dvb-modules.inc

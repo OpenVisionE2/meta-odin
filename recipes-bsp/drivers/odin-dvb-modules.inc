@@ -6,6 +6,8 @@ require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE}"
 
+KV = "${KERNELVERSION}"
+
 PV = "${KV}+${SRCDATE}"
 
 SRC_URI = "http://source.mynonpublic.com/download/${MACHINETYPE}-drivers-${KV}-${SRCDATE}.zip"
