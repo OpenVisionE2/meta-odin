@@ -7,6 +7,9 @@ require conf/license/license-close.inc
 
 PROVIDES += "virtual/blindscan-dvbc virtual/blindscan-dvbs"
 
+PV = "3.6.0"
+SRC = "1213"
+
 S = "${WORKDIR}"
 
 do_install() {
@@ -20,5 +23,3 @@ INHIBIT_PACKAGE_STRIP = "1"
 INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
 do_compile[noexec] = "1"
 deltask do_populate_sysroot
-
-BLINDSCAN_BINARY = "odin_blindscan"

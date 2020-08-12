@@ -1,6 +1,3 @@
-PV = "3.6.0"
-SRC = "1213"
-
 SRC_URI = "http://source.mynonpublic.com/download/odin-blindscan-utils-odinm9-${PV}-${SRC}.tar.gz"
 
 PACKAGES = "odin-blindscan-dvbs-utils-odinm9 odin-blindscan-dvbc-utils-odinm9"

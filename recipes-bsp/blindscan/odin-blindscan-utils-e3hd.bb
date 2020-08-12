@@ -1,6 +1,3 @@
-PV = "3.6.0"
-SRC = "1213"
-
 SRC_URI = "http://source.mynonpublic.com/download/odin-blindscan-utils-e3hd-${PV}-${SRC}.tar.gz"
 
 PACKAGES = "odin-blindscan-dvbs-utils-e3hd odin-blindscan-dvbc-utils-e3hd"
