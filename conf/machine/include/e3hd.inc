@@ -19,3 +19,6 @@ SOC_FAMILY = "bcm7358"
 PREFERRED_VERSION_linux-odin = "${KERNELVERSION}"
 
 MACHINE_FEATURES += "videoenhancement blindscan-tbs dvb-c RCA"
+
+RCTYPE = "504"
+RCNAME = "e3hd"

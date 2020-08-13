@@ -19,3 +19,6 @@ SOC_FAMILY = "bcm7358"
 PREFERRED_VERSION_linux-odin = "${KERNELVERSION}"
 
 MACHINE_FEATURES += "videoenhancement blindscan-tbs 7segment textlcd dvb-c SCART RCA"
+
+RCTYPE = "505"
+RCNAME = "odinm7"

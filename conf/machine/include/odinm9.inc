@@ -19,3 +19,5 @@ SOC_FAMILY = "bcm7413"
 PREFERRED_VERSION_linux-odin = "${KERNELVERSION}"
 
 MACHINE_FEATURES += "ci fanctrl textlcd RCA SCART YUV vfdsymbol"
+
+RCNAME = "odinm9"
