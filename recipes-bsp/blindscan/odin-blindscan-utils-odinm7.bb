@@ -6,7 +6,7 @@ RPROVIDES_odin-blindscan-dvbc-utils-odinm7 += "virtual/blindscan-dvbc"
 RPROVIDES_odin-blindscan-dvbs-utils-odinm7 += "virtual/blindscan-dvbs"
 
 FILES_odin-blindscan-dvbc-utils-odinm7 = "${bindir}/tda1002x"
-FILES_odin-blindscan-dvbs-utils-odinm7 = "${bindir}/odin_blindscan"
+FILES_odin-blindscan-dvbs-utils-odinm7 = "${bindir}/${BLINDSCAN_BINARY}"
 
 require odin-blindscan-utils.inc
 

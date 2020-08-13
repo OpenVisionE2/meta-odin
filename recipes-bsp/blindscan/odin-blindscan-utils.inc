@@ -13,9 +13,9 @@ SRC = "1213"
 S = "${WORKDIR}"
 
 do_install() {
-    install -d "${D}/${bindir}"
-    install -m 0755 "${S}/tda1002x" "${D}/${bindir}"
-    install -m 0755 "${S}/odin_blindscan" "${D}/${bindir}"    
+    install -d "${D}${bindir}"
+    install -m 0755 "${S}/tda1002x" "${D}${bindir}"
+    install -m 0755 "${S}/${BLINDSCAN_BINARY}" "${D}${bindir}"    
 }
 
 do_prepare_recipe_sysroot[noexec] = "1"
