@@ -214,7 +214,6 @@ CONFIG_FRONTSWAP=y
 # CONFIG_ZSWAP is not set
 # CONFIG_ZPOOL is not set
 # CONFIG_ZBUD is not set
-CONFIG_ZSMALLOC=m
 # CONFIG_HZ_48 is not set
 # CONFIG_HZ_100 is not set
 # CONFIG_HZ_128 is not set
@@ -2569,6 +2568,10 @@ CONFIG_RTC_LIB=y
 # Microsoft Hyper-V guest support
 #
 CONFIG_STAGING=y
+CONFIG_ZRAM=m
+# CONFIG_ZRAM_DEBUG is not set
+CONFIG_ZSMALLOC=m
+# CONFIG_ZSMALLOC_STAT is not set
 CONFIG_PRISM2_USB=m
 # CONFIG_COMEDI is not set
 CONFIG_RTLLIB=m
