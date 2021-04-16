@@ -8,7 +8,6 @@ PREFERRED_PROVIDER_virtual/kernel = "linux-odin"
 KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.bin"
 
-DVBPROVIDER = "kernel"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	"
